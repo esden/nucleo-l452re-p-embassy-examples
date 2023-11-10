@@ -1,7 +1,7 @@
 [target.'cfg(all(target_arch = "arm", target_os = "none"))']
 # replace STM32L452RETxP with your chip as listed in `probe-rs chip list`
 #runner = "probe-rs run --chip STM32L452RETxP --no-location" # Nucleo board
-runner = "probe-rs run --chip STM32L452RETxP" # Nucleo board
+runner = "probe-rs run --chip STM32L452RETxP --connect-under-reset" # Nucleo board
 
 [build]
 target = "thumbv7em-none-eabi"

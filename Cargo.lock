@@ -204,6 +204,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "defmt-serial"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1d4dd484a22e91e334e898536bb3c52a3aff6b9224cfec12db7000a35c8e6c3b"
+dependencies = [
+ "critical-section",
+ "defmt",
+ "embedded-hal 0.2.7",
+ "nb 1.1.0",
+]
+
+[[package]]
 name = "document-features"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -621,6 +633,7 @@ dependencies = [
  "cortex-m-rt",
  "defmt",
  "defmt-rtt",
+ "defmt-serial",
  "embassy-embedded-hal",
  "embassy-executor",
  "embassy-futures",
